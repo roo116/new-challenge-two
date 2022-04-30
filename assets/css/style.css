@@ -1,0 +1,501 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+:root {
+  --border-primary: 3px solid blue;
+  --border-secondary: 3px solid red;
+  --border-tertiary: 3px solid yellow;
+  --border-fourth: 3px solid black;
+  --border-bottom: 3px solid;
+  --header-color: #e2e6ef;
+  --aqua-color: #9ecacd;
+  --font-grey: #354563;
+  --font-section-title-size-screen: 6vw;
+  --font-size-titles-mobile: 6vw;
+  --font-section-title: black;
+  --font-header-footer: white;
+  --font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --font-family-2: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* sets formating and behavior for links in header and contact me sections */
+a {
+  color: var(--font-header-footer);
+  text-decoration: none;
+  font-size: 3vw;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/*move hover to desktop section
+/* a:hover {
+    color: var(--font-grey);
+    background-color: var(--font-header-footer);
+} */
+
+/* Start Header */
+header {
+  /* background-image: url("../images/profile.jpeg"); */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+  background-position: 80%;
+  padding: 10px 0px;
+  background-color: var(--font-grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: var(--font-size-titles-mobile);
+  /* flex: .15 0 10px; */
+  color: var(--font-header-footer);
+}
+
+header h2 {
+  color: var(--font-header-footer);
+  font-size: 5vw;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* margin: 7px 0; */
+}
+
+/* font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
+
+/* .header .sub-title {
+    background-color: var(--aqua-color);
+    font-weight: bold;
+    font-size: larger;
+    color: var(--grey-color);
+    height: 10%;
+    margin: 0 20px 20px 0;
+} */
+
+/* .list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4px;
+} */
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.curly-bracket {
+  color: var(--font-header-footer);
+  font-size: 3vw;
+  padding: 2px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  font-weight: bold;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* hero styles start */
+.hero {
+  background-image: url("../images/profile2.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  /* display: flex; */
+  padding-bottom: 68%;
+  height: 25%;
+
+ }
+
+main {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  margin-top: 35%;
+}
+
+/* main .front-cover {
+    display: flex;
+    justify-content: space-around;
+    margin: 30%;
+} */
+
+/* #about-me:before,
+#work:before,
+#contact-me:before {
+    display: block;
+    content: "";
+    margin-top: -817px;
+    height: 817px;
+    visibility: hidden;                
+    pointer-events: none;
+} */
+
+#about-me {
+  display: block;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--font-color);
+}
+
+#about-me h2 {
+  /* display: block; */
+  color: var(--font-section-title);
+  font-size: var(--font-size-mobile);
+  /* flex: 1 0 0; */
+  /* text-align: end;
+    padding: 0 5px;
+    /* border-right: 3px solid var(--font-grey); */
+  color: var(--font-section-title);
+}
+
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.pic-placeholder {
+  background-image: url("../images/img-placeholder.jpg");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--grey-color);
+  height: 0%;
+  width: 0px;
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+#about-me .about-me-article {
+  display: block;
+  font: var(--font-grey);
+  /* flex: .80 0 0; */
+}
+
+/* .img-placeholder {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: var(--border-secondary);
+    width: 50%;
+    margin: 0 0 0 180px;
+}*/
+
+/* #about-me div {
+    border: var(--border-fourth);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+#work {
+  border: var(--border-primary);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#work h2 {
+  border: var(--border-primary);
+  color: var(--font-section-title);
+  font-size: 10vw;
+  /* font-family: 'Courier New', Courier, monospace; */
+  flex: 0.2 0 0;
+  /* text-align: end; */
+  padding: 0 5px;
+}
+
+.card {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  background-color: var(--grey-color);
+}
+
+.image-placeholder {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--grey-color);
+  height: 180px;
+  margin: 5px;
+  width: 280px;
+  border: var(--border-secondary);
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.project-image img {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--grey-color);
+  height: 250px;
+  margin: 5px;
+  width: 400px;
+  border: var(--border-secondary);
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* .project-image img {
+    height: 180px;
+    width: 280px;
+} */
+
+/* .image-placeholder h4 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+} */
+
+.project-card {
+  border: var(--border-tertiary);
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#contact-me {
+  font-family: "Courier New", Courier, monospace;
+  border-left: var(--border-primary);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--font-grey);
+}
+
+#contact-me h2 {
+  text-decoration: none;
+  color: var(--font-header-footer);
+  font-weight: normal;
+  margin: 0;
+  font-size: var(--font-size-titles-mobile);
+  flex: 0.25 0 0;
+  text-align: right;
+  padding: 0 2px 0 17px;
+}
+
+#contact-me nav ul {
+  border: var(--border-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+@media screen and (min-width: 980px) {
+  /* a {
+        padding: 5px 10px;
+        font-weight: normal;
+        font-size: 1.5vw;
+        font-family: 'Courier New', Courier, monospace;
+    } */
+
+  header {
+    /* these go into wide screen media queries */
+    flex-direction: row;
+    /* position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 9999; */
+  }
+
+  header h1 {
+    /* border: var(--border-tertiary); */
+    /* background-color: var(--aqua-color); */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-weight: bold;
+    font-size: var(--font-size-titles-mobile);
+    /* flex: .15 0 10px; */
+    color: var(--font-header-footer);
+  }
+
+  header nav .list {
+    color: var(--font-header-footer);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: 5vw;
+    margin-top: 5px;
+  }
+
+  .curly-bracket {
+    color: var(--font-header-footer);
+  }
+
+  /* ABOUT ME section - large screen*/
+  #about-me {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--font-color);
+    margin: auto;
+  }
+
+  #about-me h2 {
+    /* display: block; */
+    font-size: var(--font-size-titles-mobile);
+    flex: 0.2;
+    margin: 0 10px;
+    text-align: end;
+    padding: 0 20px;
+    /* padding: 0 5px; */
+    /* border-right: 3px solid var(--font-grey); */
+    color: var(--font-section-title);
+  }
+
+  .pic-placeholder {
+    background-color: var(--grey-color);
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    justify-content: center;
+    border-radius: 0;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  #about-me .about-me-article {
+    display: block;
+    font: var(--font-grey);
+    flex: 0.8;
+    margin: 0 20px;
+  }
+
+  /* END about me.  enough about me, what do you think about me? */
+
+  /* START Work section */
+  #work {
+    border: var(--border-primary);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+
+  #work h2 {
+    /* display: block; */
+    font-size: var(--font-size-titles-mobile);
+    flex: 0.2;
+    margin: 0 10px;
+    text-align: end;
+    padding: 0 20px;
+    /* padding: 0 5px; */
+    /* border-right: 3px solid var(--font-grey); */
+    color: var(--font-section-title);
+    height: max-content;
+  }
+
+  
+
+  .project-cards {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+  }
+
+.major-card {
+  width: 100%;
+}
+  /* .project-image {
+    height: 40vh;
+    flex: 1;
+  } */
+
+  .image-placeholder {
+    background-color: var(--grey-color);
+    height: 180px;
+    margin: 5px;
+    width: 280px;
+    border: var(--border-secondary);
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  /* .project-image img {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--grey-color);
+    max-height: 100%;
+    min-width: 100%;
+    border: var(--border-secondary);
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+  } */
+
+  .card {
+    padding: 0;
+  }
+
+  .card h3 {
+    margin: 0%;
+    padding: 0;
+  }
+
+  /* .project-image img {
+        height: 180px;
+        width: 280px;
+    } */
+
+  /* .image-placeholder h4 {
+        align-self: center;
+        text-align: center;
+        width: 100%;
+    } */
+
+  /* #work .project-card {
+    border: var(--border-tertiary);
+    flex: 2 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 0;
+  } */
+}
